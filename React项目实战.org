@@ -1,0 +1,29 @@
+#+TITLE: React项目实战
+#+LANGUAGE: zh-CN
+
+* React项目实战
+
+** 创建项目
+   #+BEGIN_SRC shell
+     create-react-app react-elm
+     cd react-elm
+     npm start
+   #+END_SRC
+   使用上面的命令创建React的模板项目，并启动开发服务器。
+   之后就可以开始项目的开发实践了。
+
+   
+   那就从 =src/index.js= 开始吧。
+
+   我们想要使用 =React= 构建一个单页面应用，为实现各个页面
+   之间的跳转采用 =react-router-dom= 包。
+
+   这样突兀的引入其他包也是没有办法，我也在慢慢的实践中，也许
+   有更简单的方式，比如自己实现页面的跳转。这里就先这样使用，
+   以后再更新相关内容。
+
+   #+BEGIN_SRC shell
+     npm install react-router-dom --save-dev
+     npm install redux --save-dev
+     npm install react-redux --save-dev
+   #+END_SRC
