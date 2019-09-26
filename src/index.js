@@ -1,23 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+//import { Provider } from 'react-redux';
+//import { createStore } from 'redux';
 //import './index.css';
 //import App from './App';
-import todoApp from './reducers';
-import App from './components/App';
+//import todoApp from './reducers';
+//import App from './components/App';
 
 import * as serviceWorker from './serviceWorker';
 
 //import Router from './router';
 //import App from './demo2';
 //ReactDOM.render(<App />, document.getElementById('root'));
+// 实现评论列表的功能
 
-let store = createStore(todoApp);
+// let store = createStore(todoApp);
+import CommentList from './components/CommentList';
+
 render(
-	<Provider store={store}>
-	<App />
-	</Provider>,
+    
+    <CommentList />,
     document.getElementById('root')
 );
 
